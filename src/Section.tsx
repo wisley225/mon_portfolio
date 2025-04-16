@@ -1,4 +1,4 @@
-import React from 'react';
+
 import About from './About,';
 import Articles from './Articles';
 import Projects from './Projects';
