@@ -8,7 +8,8 @@ import { RiBlueskyLine } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
 import Slide from './Slide';
 import { RiStarSFill } from "react-icons/ri";
-
+import { HiArrowSmRight } from "react-icons/hi";
+import  GridTamplate from "./GridTamplate";
 
 type TextMode={
   textmode:boolean
@@ -55,7 +56,7 @@ const Home = ({textmode}:TextMode) => {
          </div>
       <Slide/>
 
-  <div className=' border p-1 rounded-3xl'>
+  <div className=' border p-1 rounded-3xl my-10'>
     <div className=' border p-10 rounded-3xl'>
     <div className=' flex items-center '>
       <div className=' mr-2 size-12 p-2 bg-gray-200 rounded-full'>     <img src={`images/lemon.svg`} alt="" className='object-cover object-center size-full rounded-full' /></div>
@@ -77,12 +78,31 @@ const Home = ({textmode}:TextMode) => {
   <RiStarSFill className='text-yellow-500 text-xl ' />
   <RiStarSFill className='text-yellow-500 text-xl ' />
   <RiStarSFill className='text-yellow-500 text-xl ' />
- <span className='text-gray-600'>Approuvé par davantage d'utilisateurs</span> </div>
- <p className='font-medium text-gray-900 text-sm'>Obtenez tous les composants pour seulement 59 $</p>
+ <span className='text-gray-600'>Approuvé par davantage d'utilisateurs</span>
   </div>
+ <p className='font-medium text-gray-900 text-sm  my-5'>Obtenez tous les composants pour seulement 59 $</p>
+ 
+<div className="flex flex-wrap"> 
+  <button className="flex items-center text-white bg-black font-medium  mr-4 px-5  rounded-lg py-2 "> Visite website <HiArrowSmRight className="ml-2" /></button> 
+  <button className="flex items-center  border rounded-lg  px-5 font-medium py-2 "> Explore components <HiArrowSmRight className="ml-2" /></button> 
+  </div>
+
   </div>
 
 
+
+  </div>
+
+  <div className="  grid grid-cols-2 ">
+    <div className="">
+      <GridTamplate/>
+      <GridTamplate/>
+      <GridTamplate/>
+
+      <a href="" className=" text-gray-500 hover:underline "> view all articles ( 5 )</a>
+    </div>
+    <div className=" border "></div>
+  </div>
 
 
          
