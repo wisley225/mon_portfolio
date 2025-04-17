@@ -10,16 +10,15 @@ import Slide from './Slide';
 import { RiStarSFill } from "react-icons/ri";
 import { HiArrowSmRight } from "react-icons/hi";
 import  GridTamplate from "./GridTamplate";
+import { BsBriefcase } from "react-icons/bs";
+import Work from "./Work";
+import { FaArrowDown } from "react-icons/fa6"
 
 type TextMode={
   textmode:boolean
 
 }
 const Home = ({textmode}:TextMode) => {
-
-
-
-
 
     return (
         <>
@@ -93,19 +92,77 @@ const Home = ({textmode}:TextMode) => {
 
   </div>
 
-  <div className="  grid grid-cols-2 ">
-    <div className="">
+  <div className="  grid grid-cols-2   ">
+    <div className=" ">
       <GridTamplate/>
       <GridTamplate/>
       <GridTamplate/>
 
-      <a href="" className=" text-gray-500 hover:underline "> view all articles ( 5 )</a>
     </div>
-    <div className=" border "></div>
+
+
+    <div className="  p-6 rounded-2xl border h-auto mb-10">
+       <h1 className="flex  items-center font-semibold mb-5"> <BsBriefcase className="text-gray-400 text-xl mr-3"/>  Work</h1>
+     <Work  
+      image='images/work_img1.svg'
+      title='DotWorld'
+      description=' Front-end developper'
+      date='04/2024 present'
+     />
+
+<Work  
+      image='images/work_img2.svg'
+      title='Survaii'
+      description=' Front-end developper'
+      date='01/2024  04/2024'
+     />
+
+
+<Work  
+      image='images/work_img3.svg'
+      title='Dark Code'
+      description='Collaborator'
+      date='05/2024 present'
+     />
+
+
+<Work  
+      image='images/work_img4.svg'
+      title='LPI'
+      description=' Front-end developper'
+      date='04/2023 - 09/2024'
+     />
+
+
+<Work  
+      image='images/work_img5.svg'
+      title='Mbao Digital'
+      description=' Front-end developper'
+      date='06/2022 - 09/2023'
+     />
+
+
+
+<Work  
+      image='images/work_img6.svg'
+      title='Gloovee'
+      description='Web Integrator'
+      date='02/2023 - 01/2024'
+     />
+
+
+
+<Work  
+      image='images/work_img7.svg'
+      title='Freelancer'
+      description=' Front-end developper'
+      date='06/2023 present'
+     />
+
+    <button className=" flex justify-center items-center font-medium w-full py-2 bg-gray-100 rounded-lg hover:bg-gray-200 cursor-pointer transition-all"> Download CV <FaArrowDown /></button> 
+    </div>
   </div>
-
-
-         
+    
         </>
     );
 }
