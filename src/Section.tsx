@@ -21,7 +21,6 @@ const Section = ({textMode}:TextMode) => {
    <Route path='Article' element={<Articles/>} /> 
    <Route path='Projects' element={<Projects/>} /> 
    <Route path='Speacking' element={<Speacking/>} /> 
-
     </Routes> 
 </div>
     );
