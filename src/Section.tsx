@@ -15,8 +15,8 @@ const Section = ({textMode}:TextMode) => {
     return (
 <div>
     <Routes>
-   <Route path='/' element={<Navigate to="/accueil"/>}/>
-   <Route path='/accueil' element={<Home textmode={textMode}/>} /> 
+   <Route path='/' element={<Navigate to="home"/>}/>
+   <Route path='home' element={<Home textmode={textMode}/>} /> 
    <Route path='About' element={<About textmode={textMode} />}/> 
    <Route path='Articles' element={<Articles textmode={textMode}/>}/> 
    <Route path='Projects' element={<Projects textmode={textMode} />}/> 

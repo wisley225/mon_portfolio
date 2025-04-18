@@ -6,7 +6,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaThreads } from "react-icons/fa6";
 import { RiBlueskyLine } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
-import Slide from './Slide';
 import { RiStarSFill } from "react-icons/ri";
 import { HiArrowSmRight } from "react-icons/hi";
 import  GridTamplate from "./GridTamplate";
@@ -57,7 +56,7 @@ const Home = ({textmode}:TextMode) => {
           </ul>
 
          </div>
-      <Slide/>
+   
 
   <div className=' border border-gray-600 p-1 rounded-3xl my-10'>
     <div className=' border border-gray-600 p-10 rounded-3xl'>

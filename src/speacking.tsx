@@ -30,6 +30,23 @@ const Speacking = ({textmode}:{textmode:boolean}) => {
               textmode={textmode}
             />
         </div>
+
+        <div className=" flex items-baseline  max-[630px]:flex-col ">
+        <p className="mr-20  font-medium">May 20,2024</p>
+ 
+            <GridTamplate
+              textmode={textmode}
+            />
+        </div>
+
+
+        <div className=" flex items-baseline  max-[630px]:flex-col ">
+        <p className="mr-20  font-medium">May 20,2024</p>
+ 
+            <GridTamplate
+              textmode={textmode}
+            />
+        </div>
   
   </>
        
