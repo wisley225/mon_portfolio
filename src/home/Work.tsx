@@ -1,6 +1,3 @@
-
-
-
 type work = {
     image: string;
     title: string;

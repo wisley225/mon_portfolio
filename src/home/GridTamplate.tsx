@@ -2,7 +2,7 @@
 import { MdNavigateNext } from "react-icons/md";
 
 type ModeText={
-    textmode:boolean
+    textmode:boolean 
 }
 
 

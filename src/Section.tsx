@@ -15,12 +15,12 @@ const Section = ({textMode}:TextMode) => {
     return (
 <div>
     <Routes>
-   <Route path='/' element={<Navigate to="/accueil"/>} />
-   <Route path='/accueil' element={<Home textmode={textMode}  />} /> 
-   <Route path='About' element={<About/>} /> 
-   <Route path='Article' element={<Articles/>} /> 
-   <Route path='Projects' element={<Projects/>} /> 
-   <Route path='Speacking' element={<Speacking/>} /> 
+   <Route path='/' element={<Navigate to="/accueil"/>}/>
+   <Route path='/accueil' element={<Home textmode={textMode}/>} /> 
+   <Route path='About' element={<About/>}/> 
+   <Route path='Articles' element={<Articles textmode={textMode}/>}/> 
+   <Route path='Projects' element={<Projects/>}/> 
+   <Route path='Speacking' element={<Speacking/>}/> 
     </Routes> 
 </div>
     );
