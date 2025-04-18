@@ -13,21 +13,21 @@ setBoolColors(newColorsBool)
 
   return (
     <>
-    <div className= {   `${boolColors ? `bg-gray-50`: ` bg-neutral-950`} px-16 border`}>
-    <div className= {` ${boolColors? `bg-white`:`bg-neutral-900`}   px-16 pt-10`} >
+    <div className= {`${boolColors ? `bg-gray-50`: ` bg-neutral-950`} px-16  max-[455px]:px-0`}>
+    <div className= {`${boolColors ? `bg-white`:`bg-neutral-900`} max-[455px]:px-2   px-16 max-[541px]:px-0 pt-10`} >
     <Navbar handlebackground={handleBackground} />
     <Section  textMode={boolColors} />
 
     </div>
 
-    <hr />
+    <hr className=" border border-neutral-700" />
     <div className={`flex justify-between p-20 ${boolColors ?`bg-white`: 'bg-neutral-900'}`}>
-     <ul className="flex  w-64 justify-evenly text-gray-800  font-medium text-sm ">
+     <ul className="flex  w-64 justify-evenly text-neutral-600  font-medium text-sm ">
       <li>About</li>
       <li>Projects</li>
       <li>Speacking</li>
      </ul>
-      <p>© 2025 Leonel Ngoya. All rights reserved.</p>
+      <p className={boolColors ? `text-black` : `text-neutral-600`}>© 2025 Leonel Ngoya. All rights reserved.</p>
     </div>
     </div>
   

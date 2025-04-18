@@ -22,7 +22,7 @@ const Home = ({textmode}:TextMode) => {
 
     return (
         <>
-         <div className=' w-7/12  '>
+         <div className=' w-7/12  max-md:w-full '>
 
          <div className=' size-16 rounded-full'>
                 <img src={`images/profile.jpeg`} alt="photo de profile" 
@@ -30,7 +30,7 @@ const Home = ({textmode}:TextMode) => {
                 />
          </div>
 
-         <h1 className= {`py-10 text-5xl  font-bold ${ textmode ?  `text-gray-900`:`text-white`} `} >
+         <h1 className= {`py-10 text-5xl max-sm:text-3xl  font-bold ${ textmode ?  `text-gray-900`:`text-white`} `} >
         Bonjour je suis Guei Lewis,mais
          vous pouvez m'appeller Wisley
          </h1>
@@ -66,8 +66,8 @@ const Home = ({textmode}:TextMode) => {
 <h1 className='text-sm font-semibold text-gray-100'>Indev/ui</h1>
     </div>
     <p className='py-5 text-gray-400'>Une collection amusante de petits composants bien codés pour rationaliser votre processus de développement.</p>
-  <div className=' w-48 flex '>
- <div className=' border border-white rounded-full bg-gray-200 relative'> <img src={`src/images/memo_1.png`} alt="" /></div>
+  <div className=' w-48 flex  max-[744px]:justify-center max-[744px]:mx-auto'>
+ <div className=' border border-white rounded-full bg-gray-200 relative'> <img src={`images/memo_1.png`} alt="" /></div>
  <div className=' border border-white rounded-full bg-gray-200 relative right-2 '> <img src={`images/memo_2.png`} alt="" /></div>
  <div className=' border border-white rounded-full bg-gray-200 relative right-4 '> <img src={`images/memo_3.png`} alt="" /></div>
  <div className=' border border-white rounded-full bg-gray-200 relative right-6 '> <img src={`images/memo_4.png`} alt="" /></div>
@@ -75,36 +75,40 @@ const Home = ({textmode}:TextMode) => {
    </div>
   
   
-<div className='flex my-2 items-center'> 
+<div className='flex my-2 items-center max-[744px]:flex-col'> 
+  <div className='flex items-center'>
   <RiStarSFill className='text-yellow-500 text-xl ' />
   <RiStarSFill className='text-yellow-500 text-xl ' />
   <RiStarSFill className='text-yellow-500 text-xl ' />
   <RiStarSFill className='text-yellow-500 text-xl ' />
   <RiStarSFill className='text-yellow-500 text-xl ' />
+ 
+  </div>
+  
  <span className='text-gray-400'>Approuvé par davantage d'utilisateurs</span>
   </div>
  <p className={`font-medium ${textmode ? 'text-black':'text-white' } text-sm  my-5`}>Obtenez tous les composants pour seulement 59 $</p>
  
 <div className="flex flex-wrap"> 
-  <button className="flex items-center text-white bg-black font-medium  mr-4 px-5  rounded-lg py-2 "> Visite website <HiArrowSmRight className="ml-2" /></button> 
-  <button className={`flex items-center ${ textmode ? 'text-black':'text-white'} border rounded-lg  px-5 font-medium py-2`} > Explore components <HiArrowSmRight className="ml-2" /></button> 
+  <button className="flex items-center  max-[744px]:w-full  max-[744px]:justify-center max-[744px]:mr-0 max-[744px]:mb-5    text-white bg-black font-medium  mr-4 px-5  rounded-lg py-2 "> Visite website <HiArrowSmRight className="ml-2" /></button> 
+  <button className={`flex items-center max-[744px]:w-full max-[744px]:justify-center max-[744px]:mr-0  ${ textmode ? 'text-black':'text-white'} border rounded-lg  px-5 font-medium py-2`} > Explore components <HiArrowSmRight className="ml-2" /></button> 
   </div>
 
   </div>
 
   </div>
 
-  <div className="  grid grid-cols-2   gap-4 ">
+  <div className="  grid grid-cols-2 max-[863px]:grid-cols-1  gap-4 ">
     <div className=" ">
-      <GridTamplate textode={textmode} />
-      <GridTamplate textMode={textmode}/>
-      <GridTamplate textMode={textmode}/>
+      <GridTamplate textmode={textmode} />
+      <GridTamplate textmode={textmode}/>
+      <GridTamplate textmode={textmode}/>
 
       <a href="" className=" text-gray-500 hover:underline block "> view all articles ( 5 )</a>
     </div>
 
 
-    <div className="  p-6 rounded-2xl border h-auto mb-10">
+    <div className="  p-6 rounded-2xl border border-gray-600 h-auto mb-10">
        <h1 className="flex  items-center font-semibold mb-5"> <BsBriefcase className="text-gray-400 text-xl mr-3"/>  Work</h1>
 <Work  
       image='images/work_img1.svg'

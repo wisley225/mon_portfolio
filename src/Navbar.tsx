@@ -17,16 +17,15 @@ handlebackground(darkModeIcon)
 
 
     return (
-        <nav className='  flex w-4/6 ml-auto justify-between   '>
+        <nav className='  flex w-4/6 ml-auto justify-between  max-lg:m-auto max-lg:w-full max-lg:justify-center  '>
 
 
-            <ul className={`flex border  w-96 font-semibold text-sm ${ darkModeIcon? `text-gray-900`:  `text-white`} justify-around py-3 rounded-full shadow-lg`}  >
+            <ul className={`flex border max-lg:flex-col max-lg:items-center max-lg:w-64 max-lg:rounded-lg  max-lg:justify-evenly mr-2  max-lg:h-64 w-96 font-semibold text-sm ${ darkModeIcon? `text-gray-900`:  `text-white`} justify-around py-3 rounded-full shadow-lg`}  >
 
-                <Link to='About'><li className=' hover:text-orange-500 transition-all'>About</li></Link>
-                <Link to='Articles'> <li className=' hover:text-orange-500 transition-all'> Articles</li></Link>
-                <Link to='Projects'> <li className=' hover:text-orange-500 transition-all'> Projects</li></Link>
-                <Link to='Speacking'> <li className=' hover:text-orange-500 transition-all'>Speacking</li></Link>
-
+                <Link to='About'><li className=' max-lg:text-xl  hover:text-orange-500 transition-all'>About</li></Link>
+                <Link to='Articles'> <li className=' max-lg:text-xl  hover:text-orange-500 transition-all'> Articles</li></Link>
+                <Link to='Projects'> <li className=' max-lg:text-xl  hover:text-orange-500 transition-all'> Projects</li></Link>
+                <Link to='Speacking'> <li className=' max-lg:text-xl  hover:text-orange-500 transition-all'>Speacking</li></Link>
 
             </ul>
             {darkModeIcon ?
