@@ -6,21 +6,21 @@ import Speacking from './speacking';
 import Home from './home/Home';
 
 import { Routes,Route, Navigate } from 'react-router-dom';
-type TextMode={
-textMode:boolean
+type Textmode={
+textmode:boolean
 
 }
 
-const Section = ({textMode}:TextMode) => {
+const Section = ({textmode}:Textmode) => {
     return (
 <div>
     <Routes>
    <Route path='/' element={<Navigate to="home"/>}/>
-   <Route path='home' element={<Home textmode={textMode}/>} /> 
-   <Route path='About' element={<About textmode={textMode} />}/> 
-   <Route path='Articles' element={<Articles textmode={textMode}/>}/> 
-   <Route path='Projects' element={<Projects textmode={textMode} />}/> 
-   <Route path='Speacking' element={<Speacking textmode={textMode} />}/> 
+   <Route path='home' element={<Home textmode={textmode}/>} /> 
+   <Route path='About' element={<About textmode={textmode} />}/> 
+   <Route path='Articles' element={<Articles textmode={textmode}/>}/> 
+   <Route path='Projects' element={<Projects textmode={textmode} />}/> 
+   <Route path='Speacking' element={<Speacking textmode={textmode} />}/> 
     </Routes> 
 </div>
     );

@@ -16,7 +16,7 @@ setBoolColors(newColorsBool)
     <div className= {`${boolColors ? `bg-gray-50`: ` bg-neutral-950`} px-16  max-[455px]:px-0`}>
     <div className= {`${boolColors ? `bg-white`:`bg-neutral-900`} max-[455px]:px-2   px-16 max-[541px]:px-0 pt-10`} >
     <Navbar handlebackground={handleBackground} />
-    <Section  textMode={boolColors} />
+    <Section  textmode={boolColors} />
 
     </div>
 
