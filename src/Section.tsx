@@ -13,7 +13,7 @@ const Section = ({textmode}:{textmode:boolean}) => {
 <div>
     <Routes>
    <Route path='/' element={<Navigate to="home"/>}/>
-   <Route path='home' element={<Home textmode={textmode}/>} /> 
+   <Route path='home' element={<Home textModeHome={textmode}/>} /> 
    <Route path='About' element={<About textmode={textmode} />}/> 
    <Route path='Articles' element={<Articles textmode={textmode}/>}/> 
    <Route path='Projects' element={<Projects textmode={textmode} />}/> 

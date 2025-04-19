@@ -14,19 +14,19 @@ import Work from "./Work";
 import { FaArrowDown } from "react-icons/fa6"
 
 
-const Home = ({textmode}:{textmode:boolean}) => {
+const Home = ({textModeHome}:{textModeHome:boolean}) => {
 
     return (
         <>
          <div className=' w-7/12  max-md:w-full '>
-
+  
          <div className=' size-16 rounded-full'>
                 <img src={`images/profile.jpeg`} alt="photo de profile" 
                 className='  size-full object-center object-cover rounded-full'
                 />
          </div>
-
-         <h1 className= {`py-10 text-5xl max-sm:text-3xl  font-bold ${ textmode ?  `text-gray-900`:`text-white`} `} >
+  
+         <h1 className= {`py-10 text-5xl max-sm:text-3xl  font-bold ${ textModeHome?  `text-gray-900`:`text-white`} `} >
         Bonjour je suis Guei Lewis,mais
          vous pouvez m'appeller Wisley
          </h1>
@@ -83,11 +83,11 @@ const Home = ({textmode}:{textmode:boolean}) => {
   
  <span className='text-gray-400'>Approuvé par davantage d'utilisateurs</span>
   </div>
- <p className={`font-medium ${textmode ? 'text-black':'text-white' } text-sm  my-5`}>Obtenez tous les composants pour seulement 59 $</p>
+ <p className={`font-medium ${textModeHome ? 'text-black':'text-white' } text-sm  my-5`}>Obtenez tous les composants pour seulement 59 $</p>
  
 <div className="flex flex-wrap"> 
   <button className="flex items-center  max-[744px]:w-full  max-[744px]:justify-center max-[744px]:mr-0 max-[744px]:mb-5    text-white bg-black font-medium  mr-4 px-5  rounded-lg py-2 "> Visite website <HiArrowSmRight className="ml-2" /></button> 
-  <button className={`flex items-center max-[744px]:w-full max-[744px]:justify-center max-[744px]:mr-0  ${ textmode ? 'text-black':'text-white'} border rounded-lg  px-5 font-medium py-2`} > Explore components <HiArrowSmRight className="ml-2" /></button> 
+  <button className={`flex items-center max-[744px]:w-full max-[744px]:justify-center max-[744px]:mr-0  ${ textModeHome ? 'text-black':'text-white'} border rounded-lg  px-5 font-medium py-2`} > Explore components <HiArrowSmRight className="ml-2" /></button> 
   </div>
 
   </div>
@@ -96,9 +96,9 @@ const Home = ({textmode}:{textmode:boolean}) => {
 
   <div className="  grid grid-cols-2 max-[863px]:grid-cols-1  gap-4 ">
     <div className=" ">
-      <GridTamplate textmode={textmode} />
-      <GridTamplate textmode={textmode}/>
-      <GridTamplate textmode={textmode}/>
+      <GridTamplate textmode={textModeHome} />
+      <GridTamplate textmode={textModeHome}/>
+      <GridTamplate textmode={textModeHome}/>
 
       <a href="" className=" text-gray-500 hover:underline block "> view all articles ( 5 )</a>
     </div>
@@ -111,7 +111,7 @@ const Home = ({textmode}:{textmode:boolean}) => {
       title='DotWorld'
       description=' Front-end developper'
       date='04/2024 present'
-      textmode={textmode}
+      textmode={textModeHome}
      />
 
 <Work  
@@ -119,7 +119,7 @@ const Home = ({textmode}:{textmode:boolean}) => {
       title='Survaii'
       description=' Front-end developper'
       date='01/2024  04/2024'
-      textmode={textmode}
+      textmode={textModeHome}
 
       
      />
@@ -130,7 +130,7 @@ const Home = ({textmode}:{textmode:boolean}) => {
       title='Dark Code'
       description='Collaborator'
       date='05/2024 present'
-      textmode={textmode}
+      textmode={textModeHome}
 
 
      />
@@ -141,7 +141,7 @@ const Home = ({textmode}:{textmode:boolean}) => {
       title='LPI'
       description=' Front-end developper'
       date='04/2023 - 09/2024'
-      textmode={textmode}
+      textmode={textModeHome}
 
      />
 
@@ -151,7 +151,7 @@ const Home = ({textmode}:{textmode:boolean}) => {
       title='Mbao Digital'
       description=' Front-end developper'
       date='06/2022 - 09/2023'
-      textmode={textmode}
+      textmode={textModeHome}
 
      />
 
@@ -162,7 +162,7 @@ const Home = ({textmode}:{textmode:boolean}) => {
       title='Gloovee'
       description='Web Integrator'
       date='02/2023 - 01/2024'
-      textmode={textmode}
+      textmode={textModeHome}
 
      />
 
@@ -173,7 +173,7 @@ const Home = ({textmode}:{textmode:boolean}) => {
       title='Freelancer'
       description=' Front-end developper'
       date='06/2023 present'
-      textmode={textmode}
+      textmode={textModeHome}
 
      />
 
