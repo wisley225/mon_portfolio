@@ -11,7 +11,7 @@ const Projects = ({textmode}:{textmode:boolean}) => {
 <p className=" text-gray-600 mb-20 w-2/3 max-[800px]:w-full ">
 I've worked on open-source projects here I've developed 
 applications solving real-world problems. Here are some of
- the projects I've worked on.
+ the projects I've worked on..
 </p>
 
 <div className=' grid grid-cols-3 gap-4   max-[980px]:grid-cols-2 max-[690px]:grid-cols-1 '> 
