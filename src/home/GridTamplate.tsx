@@ -1,9 +1,6 @@
 
 import { MdNavigateNext } from "react-icons/md";
 
-
-
-
 const GridTamplate = ({textmode}:{textmode:boolean}) => {
 
     return ( 
