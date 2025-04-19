@@ -4,7 +4,7 @@
     image:string;
     description:string;
     link:string
-    textmode?:boolean
+    textmode:boolean
  }
  const Grid = ({image, description,title,link,textmode}:DataPros) => {
     return (

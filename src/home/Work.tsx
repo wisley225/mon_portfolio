@@ -3,7 +3,7 @@ type work = {
     title: string;
     description: string;
     date: string;
-    textmode?: boolean
+    textmode: boolean
 }
 
 const Work =({image,title , description,date, textmode}:work) => {

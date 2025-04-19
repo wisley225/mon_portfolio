@@ -1,12 +1,10 @@
 
 import { MdNavigateNext } from "react-icons/md";
 
-type ModeText={
-    textmode:boolean 
-}
 
 
-const GridTamplate = ({textmode}:ModeText) => {
+
+const GridTamplate = ({textmode}:{textmode:boolean}) => {
 
     return ( 
 <div  className={`p-5  rounded-lg  ${ textmode ?`hover:bg-neutral-50`:" hover:bg-neutral-900 transition-all "} cursor-pointer transition-all`}>

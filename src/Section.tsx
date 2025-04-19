@@ -6,12 +6,9 @@ import Speacking from './speacking';
 import Home from './home/Home';
 
 import { Routes,Route, Navigate } from 'react-router-dom';
-type Textmode={
-textmode:boolean
 
-}
 
-const Section = ({textmode}:Textmode) => {
+const Section = ({textmode}:{textmode:boolean}) => {
     return (
 <div>
     <Routes>

@@ -13,11 +13,8 @@ import { BsBriefcase } from "react-icons/bs";
 import Work from "./Work";
 import { FaArrowDown } from "react-icons/fa6"
 
-type TextMode={
-  textmode:boolean
 
-}
-const Home = ({textmode}:TextMode) => {
+const Home = ({textmode}:{textmode:boolean}) => {
 
     return (
         <>
